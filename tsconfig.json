@@ -1,0 +1,29 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": false,
+    "paths": {
+      "@/*": ["/*/index", "/*"],
+      "@app/*": ["app/*/index", "app/*"]
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es5",
+    "useUnknownInCatchVariables": true
+  },
+  "include": ["app", "App.tsx", "test", "**/*.[jt]s?(x)"],
+  "exclude": ["node_modules", ".expo", "yarn.lock"]
+}

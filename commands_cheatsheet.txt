@@ -1,0 +1,5 @@
+cd C:\users\$Env:UserName\AppData\Local\Android\Sdk\emulator
+adb kill-server
+adb start-server
+./emulator -list-avds
+./emulator -avd 
